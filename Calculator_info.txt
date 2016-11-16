@@ -1,0 +1,14 @@
+FEATURES:
+
+- Recognizes positive and negative signs (example: the expression "+2+-3" is valid).
+- Can solve relatively complex expressions. (example: "sqrt(3!)-0.7sin(tan(3.5))/9^3" is valid).
+- No need to explicitly add multiplication signs before trigonometric functions, constants, and parentheses. (example: "2sin3!" and "2(3)" is valid).
+- No need to explicitly add multiplication sign following pi (constant) (example: "2pi.5" is a valid expression).
+- Can recognize math and syntax errors. (example: "12345/0" is infinity, and "3*/+" results to syntax error).
+
+CALCULATOR RESTRAINTS:
+
+- As a simple project, this calculator cannot process numbers lower than 2^-1074 and higher than (2-2^-52)·2^1023
+- Argument for factorial expects a whole number. If not, then the floor of that value will be passed instead.
+- arguments to trigonometric functions are passed in radians only. Radians to degrees (and vise versa) option has not been implemented due to the limited layouting spaces.
+- The was set to process a maximum 100 operands in an expression. Expressions containing more than the said limit will result in a syntax error.
